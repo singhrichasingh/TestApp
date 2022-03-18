@@ -1,0 +1,32 @@
+<ion-content>
+  <ion-card>
+    <ion-card-header style="text-align: center; color:black;font-size: 1.5em;">ADD NEW POST</ion-card-header>
+    <form [formGroup]="postForm">
+    <ion-card>
+      <ion-item>
+      
+        <ion-label position="stacked" style="font-size: 25px;">User Id</ion-label>
+        <ion-input   formControlName="userId"></ion-input>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-item>
+    
+        <ion-label position="stacked" style="font-size: 25px;">Title</ion-label>
+        <ion-input   formControlName="title"></ion-input>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-item>
+      
+        <ion-label position="stacked" style="font-size: 25px;">Body</ion-label>
+        <ion-input  formControlName="body"></ion-input>
+      </ion-item>
+    </ion-card>
+    </form>
+  </ion-card>
+ 
+  <ion-button (click)="addNewPost()">Add New</ion-button>
+  <ion-button (click)="dismiss()">Dismiss</ion-button>
+
+  </ion-content>
