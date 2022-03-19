@@ -5,7 +5,7 @@ import { map, tap } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class AuthServiceService {
- url="http://jsonplaceholder.typicode.com/"
+ url="https://jsonplaceholder.typicode.com/"
   constructor( public http: HttpClient) { }
   getData(){
     let headers = new HttpHeaders().set('Content-Type', 'application/json; charset=UTF-8');
